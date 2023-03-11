@@ -32,3 +32,25 @@ int - número inteiro
 float - número decimal  
 bool - valores booleanos ( true or false)
 str - strings
+
+# Operadores Aritméticos
+
+```py
+5 + 2 == 7
+5 - 2 == 3
+5 * 2 == 10
+5 / 2 == 2.5
+5 ** 2 == 25
+5 // 2 == 2
+5 % 2 == 1
+
+```
+
+## Ordem de procedência
+
+- ()
+- **
+- * / // % (faz o primeiro que aparece se tiver +1)
+- + -
+
+
