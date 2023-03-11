@@ -2,4 +2,5 @@
 
 primeiro_numero = input('Digite um numero: ')
 segundo_numero = input('Digite outro numero: ')
-print(int(primeiro_numero) + int(segundo_numero))
+soma = int(primeiro_numero) + int(segundo_numero)
+print(f'a soma entre {primeiro_numero} e {segundo_numero} é igual a {soma}')
