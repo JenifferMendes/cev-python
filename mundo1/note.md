@@ -25,3 +25,10 @@ linha
 ```
 
 ''' ou """ pode ser atribuido a uma variável.
+
+## tipos primitivos
+
+int - número inteiro  
+float - número decimal  
+bool - valores booleanos ( true or false)
+str - strings
