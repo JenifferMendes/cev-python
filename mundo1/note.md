@@ -54,3 +54,9 @@ str - strings
 - + -
 
 
+## Utilizando módulos
+
+```py
+import bebida
+from doce import pudim
+```
