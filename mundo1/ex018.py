@@ -7,9 +7,9 @@ import math
 
 angulo = float(input('Digite um ângulo: '))
 
-cosseno = math.cos(angulo)
-tangente = math.tan(angulo)
-seno = math.sin(angulo)
+cosseno = math.cos(math.radians(angulo))
+tangente = math.tan(math.radians(angulo))
+seno = math.sin(math.radians(angulo))
 
 print(f'O ângulo é {angulo}')
 print(f'O seu cosseno é {cosseno:.2f}')
