@@ -60,3 +60,10 @@ str - strings
 import bebida
 from doce import pudim
 ```
+
+# aula 09
+
+tratamento de string
+
+-> metodos
+-> acessar as string utilizando indices(semelhante ao javascript)
