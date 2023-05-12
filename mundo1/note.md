@@ -67,3 +67,11 @@ tratamento de string
 
 -> metodos
 -> acessar as string utilizando indices(semelhante ao javascript)
+
+
+# aula 10
+
+```py
+if condição:
+else:
+```
