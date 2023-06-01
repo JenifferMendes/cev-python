@@ -75,3 +75,7 @@ tratamento de string
 if condição:
 else:
 ```
+
+# aula 11
+
+https://www.youtube.com/watch?v=0hBIhkcA8O8
