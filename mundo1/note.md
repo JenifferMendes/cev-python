@@ -1,4 +1,6 @@
-# Anotações das Aulas do Mundo 1
+# Anotações do Curso de pyhton do Curso em Video
+
+# Mundo 1
 
 `print('Olá, mundo')`
 
@@ -76,6 +78,46 @@ if condição:
 else:
 ```
 
-# aula 11
+# aula 11 - Cores no terminal
 
-https://www.youtube.com/watch?v=0hBIhkcA8O8
+padrão asci
+
+Código de cor: \033:style:text:backm
+
+## style:
+- 0 - none
+- 1 - bold
+- 4 - underline
+- 7 - negative
+
+## text:
+- 30 - branco
+- 31 - vermelho
+- 32 - verde
+- 33 - amarelo
+- 34 - azul
+- 35 - roxo
+- 36 - ciano
+- 37 - cinza
+
+## back:
+- 40 - branco
+- 41 - vermelho
+- 42 - verde
+- 43 - amarelo
+- 44 - azul
+- 45 - roxo
+- 46 - ciano
+- 47 - cinza
+
+\033[0:30:41m
+\033[4:33:44m
+\033[1:35:43m
+\033[30:42m
+\033[m (padrão)
+\033[7:30m
+
+
+# Mundo 2
+
+https://www.youtube.com/watch?v=j9bYDjaAYzw&list=PLHz_AreHm4dk_nZHmxxf_J0WRAqy5Czye&index=2
