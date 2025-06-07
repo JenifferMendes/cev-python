@@ -4,7 +4,7 @@ mostre quantos dolares ela pode comprar.
 """
 
 
-real = float(input("Quanto de reais você tem: "))
+real = float(input("Digite quantos reais você possui: "))
 
 dolar = real / 3.27
 
