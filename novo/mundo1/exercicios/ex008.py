@@ -23,7 +23,7 @@ print(
     f"{decametro:,.3f}dam\n"
     f"{centimetro:,.0f}cm\n"
     f"{milimetro:,.0f}mm\n"
-    f"{micrometro:,.0f}µm \n"
-    f"{nanometro:,.0f}nm \n"
-    f"{picometro:,.0f}pm \n"
+    f"{micrometro:,.0f}µm\n"
+    f"{nanometro:,.0f}nm\n"
+    f"{picometro:,.0f}pm\n"
 )
