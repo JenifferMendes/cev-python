@@ -4,7 +4,7 @@ em seguida o primeiro e o ultimo nome separadamente.
 """
 
 
-name = input("Digite seu nome inteiro:  ")
+name = input("Digite seu nome inteiro:  ").strip()
 
 name_separado = name.split()
 name_primeiro = name_separado[0]
