@@ -6,7 +6,7 @@ Faça um programa que leia uma frase pelo teclado e mostre:
 """
 
 
-frase = input("Digite uma frase: ")
+frase = input("Digite uma frase: ").strip()
 
 frase_lower = frase.lower()
 letra_count_a = frase_lower.count("a")
