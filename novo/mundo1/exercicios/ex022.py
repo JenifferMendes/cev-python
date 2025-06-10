@@ -12,11 +12,9 @@ nome_completo = input("Qual é o seu nome completo? ")
 nome_completo_upper = nome_completo.upper()
 nome_completo_lower = nome_completo.lower()
 nome_completo_split = nome_completo.split()
-nome_completo_join = "".join(nome_completo)
-nome_completo_space = nome_completo_join.count(' ')
-nome_completo_len = len(nome_completo_join) - nome_completo_space
+nome_completo_join = "".join(nome_completo_split)
+nome_completo_len = len(nome_completo_join)
 primeiro_nome_len = len(nome_completo_split[0])
-
 
 print(
     f"O seu nome é {nome_completo}.\n" 
