@@ -4,11 +4,15 @@ um dos digitos separados.
 """
 
 
-numero = input("Digite um número de 0 a 9999:")
+numero = int(input("Digite um número de 0 a 9999:"))
+u = numero // 1 % 10
+d = numero // 10 % 10
+c = numero // 100 % 10
+m = numero // 1000 % 10
 
 print(
-    f"Unidade: {numero[3]}\n"
-    f"Dezenha: {numero[2]}\n"
-    f"Centena:{numero[1]}\n"
-    f"Milhar: {numero[0]}"
+    f"Unidade: {u}\n"
+    f"Dezenha: {d}\n"
+    f"Centena:{c}\n"
+    f"Milhar: {m}"
 )
