@@ -4,11 +4,11 @@ não com o nome Santo.
 """
 
 
-cidade = input("Qual é o nome da sua cidade? ")
+cidade = input("Qual é o nome da sua cidade? ").strip()
 
 cidade_lower = cidade.lower()
-cidade_santo = "santo"in cidade_lower
+cidade_santo = cidade_lower[:5] == "santo"
 print(
     f"A sua cidade é: {cidade.title()}, "
-    f"a cidade possui Santo no nome? {cidade_santo}."
+    f"a cidade possui Santo no começo do nome? {cidade_santo}."
 )
