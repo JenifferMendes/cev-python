@@ -8,9 +8,8 @@ viagens mais longas.
 distancia = float(input("Qual a distância da sua viagem? "))
 
 if distancia <= 200:
-    valor = distancia * .5
-    print(f"Sua passagem fica no valor de R${valor:,.2f}")
+    valor = distancia * .50
 else:
     valor = distancia * .45
-    print(f"Sua passagem fica no valor de R${valor:,.2f}.")
+print(f"Sua passagem fica no valor de R${valor:,.2f}.")
 print("Boa viagem!")
