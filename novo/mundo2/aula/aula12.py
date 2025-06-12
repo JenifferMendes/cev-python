@@ -14,6 +14,6 @@ elif idol == "Yunho" or idol == "Jeong Yunho":
 elif idol == "Haein" or idol == "Jung Haein":
     print(f"{idol} é meu amante")
 elif idol == "Chan Eun" or idol == "Cha Eun-woo":
-    print(f"É minha amizade colida")
+    print(f"É minha amizade colorida")
 else:
     print(f"Pode ser seu utt, eu deixo")
