@@ -27,5 +27,5 @@ elif idade <= 19:
     print(f"Sua idade é {idade} anos.Você está na categoria Junior")
 elif idade <= 20:
     print(f"Sua idade é {idade} anos.Você está na categoria Senior")
-elif idade > 20:
+else:
     print(f"Sua idade é {idade} anos.Você está na categoria Master")
