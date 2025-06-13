@@ -19,14 +19,14 @@ base = int(input(
 
 if base == 1:
     binario = bin(numero)
-    print(f"{numero} convertido para Binário é igual: {binario}")
+    print(f"{numero} convertido para Binário é igual: {binario[2:]}")
 elif base == 2:
     octal = oct(numero)
-    print(f"{numero} convertido para Octal é igual: {octal}")
+    print(f"{numero} convertido para Octal é igual: {octal[2:]}")
 elif base == 3:
     hexadecimal = hex(numero)
     print(
-        f"{numero} convertido para Hexadecimal é igual: {hexadecimal}"
+        f"{numero} convertido para Hexadecimal é igual: {hexadecimal[2:]}"
     )
 else:
     print("voce digitou o número errado.")
