@@ -16,8 +16,8 @@ nota_dois = float(input("Digite a nota2: "))
 media = (nota_um + nota_dois) / 2
 
 if media >= 7:
-    print(f"Sua média é: {media}.Parabéns, você foi aprovado.")
+    print(f"Sua média é: {media:.1f}.Parabéns, você foi aprovado.")
 elif media >= 5:
-    print(f"Sua média é: {media} Você ficou de reperação.")
-elif media < 5:
-    print(f"Sua média é: {media}. Você está reprovado.")
+    print(f"Sua média é: {media:.1f} Você ficou de reperação.")
+else:
+    print(f"Sua média é: {media:.1f}. Você está reprovado.")
