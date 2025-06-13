@@ -15,7 +15,7 @@ ano = float(input("Quantos anos você quer pagar o valor da casa? "))
 mes = ano * 12
 parcela = casa / mes
 salario_limite = salario * 0.3
-print(parcela)
+
 if parcela <= salario_limite:
     print(f"Você pode financiar sua casa em {mes} x R${parcela:,.2f}.")
 else:
