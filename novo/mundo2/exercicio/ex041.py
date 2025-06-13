@@ -13,6 +13,7 @@ de acordo com a idade:
 
 from datetime import date
 
+
 hoje = date.today().year
 
 nascimento = int(input("Digite o ano de nascimento: "))
