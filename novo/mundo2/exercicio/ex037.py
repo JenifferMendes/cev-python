@@ -10,19 +10,23 @@ escolher qual será a base de conversão:
 
 numero = int(input("Digite um número: "))
 base = int(input(
-    "Qual a base da conversão, digite 1-binário,2-octal,3-hexadecimal" 
+    "Escolha uma das bases para conversão:\n" 
+    "[1] converter para binário,\n" 
+    "[2] converter para octal\n" 
+    "[3] converter para hexadecimal\n"
+    "Qual sua opção:"
 ))
 
 if base == 1:
     binario = bin(numero)
-    print(f"Base de conversão escolhida foi: binário, seu número é: {binario}")
+    print(f"{numero} convertido para Binário é igual: {binario}")
 elif base == 2:
     octal = oct(numero)
-    print(f"Base de conversão escolhida foi octal, seu número é: {octal}")
+    print(f"{numero} convertido para Octal é igual: {octal}")
 elif base == 3:
     hexadecimal = hex(numero)
     print(
-        f"Base de conversão escolhida foi hex, seu número é: {hexadecimal}"
+        f"{numero} convertido para Hexadecimal é igual: {hexadecimal}"
     )
 else:
     print("voce digitou o número errado.")
