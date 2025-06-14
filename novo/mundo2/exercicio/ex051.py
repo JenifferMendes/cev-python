@@ -4,15 +4,11 @@ mostre os 10 primeiros termos dessa progressão.
 """
 
 
-termo = int(input("Digite o primeiro termo da sua PA: "))
-razao = float(input("Digite a razão da sua PA: "))
+primeiro = int(input("Digite o primeiro termo da sua PA: "))
+razao = int(input("Digite a razão da sua PA: "))
 
-pa_soma = termo
-
-print(f"Os termos da sua são PA: {termo:.2f}, ", end="")
-for c in range(termo, 9):
-    pa_soma = pa_soma + razao
-    if c < 8:
-        print(f"{pa_soma:.2f}, ",  end="", )
-    elif c == 8:
-        print(f"{pa_soma:.2f}.")
+decimo = primeiro + (10 - 1) * razao
+print(f"Os termos da sua são PA: ")
+for c in range(primeiro, decimo + razao , razao):
+    print(f"{c}", end="~ ")
+print("Sua PA.")
