@@ -6,30 +6,38 @@ Crie um programa que faça o computador jogar jokenpo com voce.
 import random
 
 
-pc = random.randint(1,3)
+pc = random.randint(0,2)
 
-print(pc)
 print("Vamos jogar jokenpo, escolha um dos números para me vencer.")
 
-jokenpo = int(input("Digite 1-pedra, 2-tesoura, 3-papel"))
+jokenpo = int(input(
+    "Digite uma das opções abaixos\n" 
+    "[ 0 ] pedra\n"
+    "[ 1 ] tesoura\n"
+    "[ 2 ] papel\n"
+    ""
+))
 
-if pc == jokenpo:
-    print(f"Ambos tiraram: {jokenpo}. Deu empate!!")
-elif pc == 1:
-    escolha = "Pedra"
-    if jokenpo == 2:
-        print(f"Tesoura perde para {escolha}. Você perdeu!!")
-    elif jokenpo == 3:
-        print(f"Papel ganha de {escolha}. Você ganhou!!")
-elif pc == 2:
-    escolha = "Tesoura"
-    if jokenpo == 1:
-        print(f"Pedra ganha de {escolha}. Você ganhou!!")
-    elif jokenpo == 3:
-        print(f"Papel perde para {escolha}. Você perdeu!!")
-elif pc == 3:
-    escolha = "Papel"
-    if jokenpo == 1:
-        print(f"Pedra perde para {escolha}. Você perdeu!!")
-    if jokenpo == 2:
-        print(f"Tesoura ganha de {escolha}. Você ganhou!!")
+opcoes = ["Pedra", "Tesoura", "Papel"]
+opcao_pc = opcoes[pc]
+
+if jokenpo == 1 or jokenpo == 2 or jokenpo == 0:
+    if pc == jokenpo:
+        print(f"Ambos tiraram: {opcao_pc}. Deu empate!!")
+    elif pc == 0:
+        if jokenpo == 1:
+            print(f"Tesoura perde para {opcao_pc}. Você perdeu!!")
+        elif jokenpo == 2:
+            print(f"Papel ganha de {opcao_pc}. Você ganhou!!")
+    elif pc == 1:
+        if jokenpo == 0:
+            print(f"Pedra ganha de {opcao_pc}. Você ganhou!!")
+        elif jokenpo == 2:
+            print(f"Papel perde para {opcao_pc}. Você perdeu!!")
+    elif pc == 2:
+        if jokenpo == 0:
+            print(f"Pedra perde para {opcao_pc}. Você perdeu!!")
+        if jokenpo == 1:
+            print(f"Tesoura ganha de {opcao_pc}. Você ganhou!!")
+else:
+    print("opcão invalida")
