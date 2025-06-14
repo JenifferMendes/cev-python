@@ -21,23 +21,22 @@ jokenpo = int(input(
 opcoes = ["Pedra", "Tesoura", "Papel"]
 opcao_pc = opcoes[pc]
 
-if jokenpo == 1 or jokenpo == 2 or jokenpo == 0:
-    if pc == jokenpo:
-        print(f"Ambos tiraram: {opcao_pc}. Deu empate!!")
-    elif pc == 0:
-        if jokenpo == 1:
-            print(f"Tesoura perde para {opcao_pc}. Você perdeu!!")
-        elif jokenpo == 2:
-            print(f"Papel ganha de {opcao_pc}. Você ganhou!!")
-    elif pc == 1:
-        if jokenpo == 0:
-            print(f"Pedra ganha de {opcao_pc}. Você ganhou!!")
-        elif jokenpo == 2:
-            print(f"Papel perde para {opcao_pc}. Você perdeu!!")
+if jokenpo == pc:
+    print(f"Ambos tiraram: {opcao_pc}. Deu empate!!")
+elif jokenpo == 0:
+    if pc == 1:
+        print(f"{opcao_pc} perde de Pedra. Você ganhou!!")
     elif pc == 2:
-        if jokenpo == 0:
-            print(f"Pedra perde para {opcao_pc}. Você perdeu!!")
-        if jokenpo == 1:
-            print(f"Tesoura ganha de {opcao_pc}. Você ganhou!!")
+        print(f"{opcao_pc} ganha de Pedra. Você perdeu!!")
+elif jokenpo == 1:
+    if pc == 0:
+        print(f"{opcao_pc} ganha de Tesoura. Você perdeu!!")
+    elif pc == 2:
+        print(f"{opcao_pc} perde de Tesoura. Você ganhou!!")
+elif jokenpo == 2:
+    if pc == 0:
+        print(f"{opcao_pc} perde de Papel. Você ganhou!!")
+    elif pc == 1:
+        print(f"{opcao_pc} ganha de Papel. Você perdeu!!")
 else:
     print("opcão invalida")
