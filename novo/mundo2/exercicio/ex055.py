@@ -13,4 +13,4 @@ for c in range(0, 5):
             maior = peso
         elif peso < menor:
             menor = peso
-print(f"O maior peso foi: {maior}kg e o o menor {menor}kg.")
+print(f"O maior peso foi: {maior:.2f}kg e o menor {menor:.2f}kg.")
