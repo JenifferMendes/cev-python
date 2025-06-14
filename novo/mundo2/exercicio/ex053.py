@@ -4,7 +4,7 @@ desconsiderando os espaços.
 """
 
 
-frase = input("Digite uma frase: ").strip().replace(" ", "")
+frase = input("Digite uma frase: ").strip().lower.replace(" ", "")
 
 tamanho = len(frase)
 contrario = frase[tamanho::-1]
