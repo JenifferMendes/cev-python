@@ -11,7 +11,8 @@ mulher_menor = 0
 
 primeiro_homem = True
 
-for c in range(0, 4):
+for c in range(1, 5):
+    print("{:=^69}".format("\33[30;45m {} pessoa\33[m").format(c))
     nome = input("Digite o nome da pessoa: ")
     idade = int(input("Digite a idade da pessoa: "))
     sexo = int(input(
@@ -41,6 +42,6 @@ media = media_idade / 4
 
 print(
     f"A média de idade das pessoas é: {media} anos,\n"
-    f"O nome do homem mais velho é: {nome_velho},\n"
+    f"O nome do homem mais velho é: {nome_velho} com {velho} anos,\n"
     f"Tem {mulher_menor} mulher(es) menor de 20 anos."
 )
