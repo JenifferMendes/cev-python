@@ -9,14 +9,15 @@ considerando o seu preço normal e condição de pagamento:
 """
 
 
+print("{:=^69}".format("\33[30;45mLOJAS JOTUME\33[m"))
 produto = float(input("Digite o preço do seu produto: R$"))
 
 print("Escolha o metodo do pagamento abaixo, com base no número.")
 print(
-    "1 - a vista em cash/cheque,\n"
-    "2 - a vista no cartao,\n"
-    "3 - 2x no cartao,\n"
-    "4 - 3x ou + no cartao"
+    "[ 1 ] a vista em cash/cheque,\n"
+    "[ 2 ] a vista no cartao,\n"
+    "[ 3 ] 2x no cartao,\n"
+    "[ 4 ] 3x ou + no cartao"
 )
 
 metodo_pagamento = int(input("Digite o número referente ao metodo: "))
@@ -32,6 +33,11 @@ elif metodo_pagamento == 3:
     print(f"Você irá pagar duas parcelas de {parcela:,.2f}, pelo valor normal.")
 elif metodo_pagamento == 4:
     preco = produto * 1.20
-    print(f"Voce irá pagar {preco:,.2f}, e pode parcelar em 3 vezes ou mais.")
+    vezes = int(input("Quantas parcelas? "))
+    parcelas = preco / vezes
+    print(
+        f"Voce irá pagar em {vezes}x de R${parcelas:,.2f} "
+        f"e o total é R${preco:,.2f}."
+    )
 else:
     print(f"Você digitou o número errado.")
