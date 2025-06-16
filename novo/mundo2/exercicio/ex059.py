@@ -15,7 +15,6 @@ numero_dois = int(input("Digite outro número: "))
 
 print("Escolha uma das opções abaixo")
 
-
 opcao = 0
 while opcao != 5:
     print(
