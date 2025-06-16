@@ -15,6 +15,8 @@ numero_dois = int(input("Digite outro número: "))
 
 print("Escolha uma das opções abaixo")
 
+dash = "\n" + "=" * 20 + "\n"
+
 opcao = 0
 while opcao != 5:
     print(
@@ -27,36 +29,37 @@ while opcao != 5:
     opcao = int(input("Digite sua opção: "))
     if opcao == 1:
         soma = numero_um + numero_dois
-        print("=" * 20, "\n")
-        print(f"A soma: {numero_um} + {numero_dois} = {soma}.\n")
-        print("=" * 20)
-    if opcao == 2:
+        print(dash)
+        print(f"A soma: {numero_um} + {numero_dois} = {soma}.")
+        print(dash)
+    elif opcao == 2:
         multiplicacao = numero_um * numero_dois
-        print("=" * 20, "\n")
+        print(dash)
         print(
-            f"A multiplicacao: {numero_um} x {numero_dois} = {multiplicacao}.\n"
+            f"A multiplicação: {numero_um} x {numero_dois} = {multiplicacao}."
         )
-        print("="* 20)
-    if opcao == 3:
+        print(dash)
+    elif opcao == 3:
         if numero_um > numero_dois:
-            print("=" * 20, "\n")
-            print(f"O número {numero_um} é maior que o número {numero_dois}.\n")
-            print("="* 20)
+            print(dash)
+            print(f"O número {numero_um} é maior que o número {numero_dois}.")
+            print(dash)
         elif numero_um < numero_dois:
-            print("=" * 20, "\n")
-            print(f"O número {numero_dois} é maior que o número {numero_um}.\n")
-            print("="* 20)
+            print(dash)
+            print(f"O número {numero_dois} é maior que o número {numero_um}.")
+            print(dash)
         else:
-            print("=" * 20, "\n")
-            print(f"os números são iguais.\n")
-            print("="* 20)
-    if opcao == 4:
-            print("=" * 20, "\n")
-            print("digite novamente")
-            numero_um = int(input("Digite um número: "))
-            numero_dois = int(input("Digite outro número: "))
-            print("="* 20)
+            print(dash)
+            print(f"Os números são iguais.")
+            print(dash)
+    elif opcao == 4:
+        print(dash)
+        print("Digite novamente")
+        numero_um = int(input("Digite um número: "))
+        numero_dois = int(input("Digite outro número: "))
+        print(dash)
     if opcao < 5:
         print("Escolha uma nova opção")
-
+print(dash)
 print("Obrigado por usar o programa!")
+print(dash)
