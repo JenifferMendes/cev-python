@@ -11,5 +11,5 @@ while "M" in resposta or "H" in resposta:
         "Digite uma das opçoes abaixo:\n"
         "[M] para Mulher\n"
         "[H] para Homem \n"
-    ).upper()
+    ).strip().upper()
 print("Fim")
