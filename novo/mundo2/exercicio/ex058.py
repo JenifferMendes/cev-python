@@ -20,8 +20,9 @@ while numero_pc != numero_jogador:
         print("Você digitou um número errado. Tente novamente")
     if numero_jogador <= 10:
         if numero_jogador!= numero_pc:
-            print("tente novamente!")
+            if numero_jogador > numero_pc:
+                print("Menos... tente um número menor!")
+            if numero_jogador < numero_pc:
+                print("Mais...tente um número maior!")
             palpites += 1
-            print(palpites, numero_pc)
-print(f"Você escolheu {numero_jogador} e o Computador {numero_pc}.")
 print(f"Você acertou!! O número total de palpites foi de {palpites} vezes.")
