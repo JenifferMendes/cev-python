@@ -25,22 +25,22 @@ while True:
         "Qual sua opção: "
     ).strip().upper()[0]
     print(f"Jogador: {numero_jogador}, PC: {numero_pc}, SOMA: {soma}")
-    if opcao == "Pp" and soma % 2 == 0:
+    if opcao == "P":
+        if soma % 2 == 0:
             print("Você ganhou - Par")
             quantidade += 1
             print(1)
-    elif opcao == "Pp" and soma % 2 == 1:
+        else:
             print("Você perdeu - Impar")
             print(2)
             break
-    elif opcao == "Ii" and soma % 2 == 0:
+    else: 
+        if soma % 2 == 0:
             print("Você perdeu - Par")
             print(3)
             break
-    elif opcao == "Ii" and soma % 2 == 1:
+        else:
             print("Você ganhou - Impar")
             print(4)
             quantidade += 1
-    elif numero_jogador == numero_pc:
-        break
 print(f"Você ganhou {quantidade} vezes. Porém perdeu a última. \nFim")
