@@ -7,7 +7,7 @@ tente fazer com for e while
 
 numero = numero_for = int(input("Digite um número: "))
 
-fatorial = fatorial_for= 1
+fatorial = fatorial_for = 1
 print(f"O fatorial de {numero} ", end="")
 while numero != 1:
     fatorial *= numero
