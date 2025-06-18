@@ -6,13 +6,10 @@ digitar valores.
 """
 
 
-opcao = 0
-soma = 0
-quantidade = 0
-maior = 0
-menor = 0
+opcao = "S"
+soma = quantidade = maior = menor = 0
 
-while opcao != "N":
+while opcao in "Ss":
     numero = int(input("Digite um número: "))
     soma += numero
     quantidade += 1
@@ -28,7 +25,7 @@ while opcao != "N":
         "Deseja continuar?\n"
         "[S] sim para continuar\n"
         "[N] não para sair\n"
-    ).upper()
+    ).strip().upper()[0]
     print(maior, menor)
 print(
     f"Você digitou {quantidade} números.\n"
