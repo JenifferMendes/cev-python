@@ -59,7 +59,9 @@ while opcao != 5:
         numero_dois = int(input("Digite outro número: "))
         print(dash)
     if opcao < 5:
-        print("Escolha uma nova opção")
+        print("Escolha uma nova opção: ")
+    if opcao > 5:
+        print("Opção invalida! Escolha uma opção abaixo: ")
 print(dash)
 print("Obrigado por usar o programa!")
 print(dash)
