@@ -30,6 +30,6 @@ while True:
     print(f"Jogador: {numero_jogador}, PC: {numero_pc}, SOMA: {soma}")
     if not (soma % 2 == 0 and opcao == "P" or soma % 2 == 1 and opcao == "I"):
         break
-    print("Você ganhou")
+    print("Você ganhou, vamos jogar novamente!")
     quantidade += 1
 print(f"Você ganhou {quantidade} vezes. Porém perdeu a última. \nFim")
