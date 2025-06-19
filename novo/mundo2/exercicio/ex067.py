@@ -6,7 +6,6 @@ número solicitado for negativo.
 
 
 dash = "\n" + "="* 25 + "\n"
-count = 1
 
 numero = int(input("Digite um número: "))
 
@@ -17,11 +16,11 @@ while True:
         break
     print(dash)
     print(f"TABUADA DO {numero}\n")
+    count = 1
     while count <= 10:
         tabuada = numero * count 
         print(f" {numero} x {count} = {tabuada}")
         count += 1
     print(dash)
     numero = int(input("Digite um novo número: "))
-    count = 1
 print(f"Fim")
