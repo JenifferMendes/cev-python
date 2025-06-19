@@ -19,28 +19,17 @@ while True:
     numero_pc = randint(0,10)
     numero_jogador = int(input("Digite um número: "))
     soma = numero_pc + numero_jogador
-    opcao = input(
-        "[P] para Par \n"
-        "[I] para Impar \n"
-        "Qual sua opção: "
-    ).strip().upper()[0]
+    tipo = ["P", "I"]
+    opcao = " "
+    while opcao not in tipo:
+        opcao = input(
+            "[P] para Par \n"
+            "[I] para Impar \n"
+            "Qual sua opção: "
+        ).strip().upper()
     print(f"Jogador: {numero_jogador}, PC: {numero_pc}, SOMA: {soma}")
-    if opcao == "P":
-        if soma % 2 == 0:
-            print("Você ganhou - Par")
-            quantidade += 1
-            print(1)
-        else:
-            print("Você perdeu - Impar")
-            print(2)
-            break
-    else: 
-        if soma % 2 == 0:
-            print("Você perdeu - Par")
-            print(3)
-            break
-        else:
-            print("Você ganhou - Impar")
-            print(4)
-            quantidade += 1
+    if not (soma % 2 == 0 and opcao == "P" or soma % 2 == 1 and opcao == "I"):
+        break
+    print("Você ganhou")
+    quantidade += 1
 print(f"Você ganhou {quantidade} vezes. Porém perdeu a última. \nFim")
