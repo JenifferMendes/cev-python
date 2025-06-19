@@ -7,20 +7,15 @@ número solicitado for negativo.
 
 dash = "\n" + "="* 25 + "\n"
 
+print(dash)
 numero = int(input("Digite um número: "))
 
-print(dash)
 
-while True:
-    if numero < 0:
-        break
+while numero > 0:
     print(dash)
     print(f"TABUADA DO {numero}\n")
-    count = 1
-    while count <= 10:
-        tabuada = numero * count 
-        print(f" {numero} x {count} = {tabuada}")
-        count += 1
+    for count in range(0,11):
+        print(f" {numero} x {count} = {numero * count}")
     print(dash)
     numero = int(input("Digite um novo número: "))
 print(f"Fim")
