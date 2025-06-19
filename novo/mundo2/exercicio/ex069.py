@@ -7,6 +7,7 @@ b) quantos homens foram cadastrados.
 c) quantas mulheres tem menos de 20 anos.
 """
 
+
 dash = "\n" + "=" * 20 + "\n"
 
 total = maiores = homens = mulheres = 0
@@ -14,22 +15,27 @@ total = maiores = homens = mulheres = 0
 while True:
     print(dash)
     print( "CADASTRANDO NOVA PESSOA")
-    nome = str(input("Digite o nome: ")).strip().capitalize()
+    nome = input("Digite o nome: ").strip().capitalize()
     idade = int(input("Digite a idade: "))
-    sexo = str(input(
-        "Qual é o sexo da pessoa: [M/H]"
-    )).strip().upper()
-    print(nome, idade)
+    opcao = ["F","M"]
+    sexo = " "
+    while sexo not in opcao:
+        sexo = input(
+            "Qual é o sexo da pessoa: [F/M]"
+        ).strip().upper()
     total += 1
     if idade >= 18:
         maiores += 1
-    if sexo == "H":
+    if sexo == "M":
         homens += 1
-    if sexo == "M" and idade < 20:
+    if sexo == "F" and idade < 20:
         mulheres += 1
-        print(mulheres)
-    opcao = input("Deseja continuar? [S/N]").strip().upper()[0]
-    if opcao == "N":
+    
+    resposta = ["S","N"]
+    continuar = " "
+    while continuar not in resposta:
+        continuar = input("Deseja continuar? [S/N]").strip().upper()
+    if "N" in continuar:
         break
 print(
     f"O total de pessoas cadastradas foi de: {total}. \n"
