@@ -25,7 +25,11 @@ for nota in notas:
     if quantidade > 0:
         print(f"A quantidade de notas de {nota} é {quantidade}.")
 
-print(dash)
-print(f"{'Obrigado por utilizar nosso banco!':^{n}}")
-print(f"{'Banco Jotume':^{n}}")
-print(dash)
+print(
+    dash,
+    (
+        f"{'\bObrigado por utilizar nosso banco!':^{n}}\n"
+        f"{'Banco Jotume':^{n}}"
+    ),
+    dash,
+)
