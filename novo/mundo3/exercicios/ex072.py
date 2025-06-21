@@ -11,10 +11,16 @@ numeros = (
     "oito", "nove", "dez", "onze", "doze", "treze", "quatorze", "quinze",
     "dezeseis", "dezessete", "dezoito", "dezenove", "vinte",
 )
-
-usuario = int(input("Digite um número entre 0 e 20: "))
-
-while not 0 < usuario < 20:
-    usuario = int(input("Tente novamente. Digite um número entre 0 e 20: "))
-
-print(f"Você digitou o número {numeros[usuario]}.")
+ 
+while True:
+    usuario = int(input("Digite um número entre 0 e 20: "))
+    while not 0 <= usuario < 20:
+        usuario = int(input("Tente novamente. Digite um número entre 0 e 20: "))
+    print(f"Você digitou o número {numeros[usuario]}.")
+    opcao = ("S", "N")
+    continuar = " "
+    while continuar not in opcao:
+        continuar = input("Deseja continuar? [S/N]").strip().upper()
+    if continuar == "N":
+        break
+print("Fim")
