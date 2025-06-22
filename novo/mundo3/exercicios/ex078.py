@@ -5,7 +5,7 @@ posições na lista.
 """
 
 
-dash = "=" * 30 + "\n"
+dash = "=" * 50 + "\n"
 numeros = []
 for numero in range(0,5):
     numero = int(input(f"Digite um valor para a posição {numero}: "))
