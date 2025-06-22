@@ -7,12 +7,26 @@ posições na lista.
 
 dash = "=" * 50 + "\n"
 numeros = []
-for numero in range(0,5):
-    numero = int(input(f"Digite um valor para a posição {numero}: "))
+
+for posicao in range(0,5):
+    numero = int(input(f"Digite um valor para a posição {posicao}: "))
     numeros.append(numero)
-print(dash)
-print(f"Você digitou os valores: {numeros}")
+
 maior = max(numeros)
 menor = min(numeros)
-print(f"O maior valor digitado foi {maior} na posicao: {numeros.index(maior)}")
-print(f"O menor valor digitado foi {menor} nas posicão: {numeros.index(menor)}")
+
+posicoes_maior = []
+posicoes_menor = []
+
+for posicao, numero in enumerate(numeros):
+    if numero == maior:
+        posicoes_maior.append(posicao)
+    if numero == menor:
+        posicoes_menor.append(posicao)
+
+print(
+    dash,
+    f"\bVocê digitou os valores: {numeros}.\n"
+    f"O maior valor digitado foi {maior} na posicao: {posicoes_maior}.\n"
+    f"O menor valor digitado foi {menor} nas posicão: {posicoes_menor}."
+)
