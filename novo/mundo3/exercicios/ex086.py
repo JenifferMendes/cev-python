@@ -17,8 +17,6 @@ for num in range(0, 9):
     posicao += 1
     if posicao == 3:
         posicao = 0
-    if numero % 2 == 0:
-        pares_soma += numero
     if num < 3:
         linha_um.append(numero)
     elif num < 6:
