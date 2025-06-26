@@ -11,12 +11,14 @@ aluno["Aluno"] = nome
 media = float(input(f"Média de {nome}: "))
 aluno["Média"] = media
 
-if media > 70:
+if 100 > media > 70:
     aluno["Situação"] = "Aprovado"
 elif 49 < media < 70:
     aluno["Situação"] = "Recuperação"
-else:
+elif 0 <= media <= 49:
     aluno["Situação"] = "Reprovado"
+else:
+    print("Média inválida.")
 
 for k, v in aluno.items():
         print(f"{k} é igual a {v}")
