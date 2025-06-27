@@ -11,7 +11,7 @@ from operator import itemgetter
 
 
 jogadores = {}
-ranking = {}
+ranking = []
 
 print("valores sorteados: ")
 
@@ -23,4 +23,6 @@ for c in range(1, 5):
 
 ranking = sorted(jogadores.items(), key=itemgetter(1), reverse=True)
 
-print(ranking)
+for i, v in enumerate(ranking):
+    print(f"{i + 1} lugar: {v[0]} com {v[1]}.")
+    sleep(0.5)
