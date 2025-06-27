@@ -6,16 +6,15 @@ em um dicionário. no final mostre o conteudo da estrutura na tela.
 
 aluno = {}
 
-nome = input("Nome: ")
-aluno["Aluno"] = nome
-media = float(input(f"Média de {nome}: "))
-aluno["Média"] = media
+aluno["Aluno"] = input("Nome: ")
+aluno["Média"] = float(input(f"Média de {aluno["Aluno"]}: "))
 
-if 100 > media > 70:
+
+if 100 > aluno["Média"] > 70:
     aluno["Situação"] = "Aprovado"
-elif 49 < media < 70:
+elif 49 < aluno["Média"] < 70:
     aluno["Situação"] = "Recuperação"
-elif 0 <= media <= 49:
+elif 0 <= aluno["Média"] <= 49:
     aluno["Situação"] = "Reprovado"
 else:
     print("Média inválida.")
