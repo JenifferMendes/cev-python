@@ -5,3 +5,8 @@ zero, o dicionário receberá também o ano de contratação e o salario.
 calcule a acrescente, além da idade, com quantos anos a pessoa vai se aposentar.
 35 anos de contribuição para aposentar.
 """
+
+
+nome = input("Digite o nome: ")
+nascimento = int(input("Digite o ano nascimento: "))
+
