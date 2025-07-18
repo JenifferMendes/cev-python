@@ -10,11 +10,11 @@ aluno["Aluno"] = input("Nome: ")
 aluno["Média"] = float(input(f"Média de {aluno["Aluno"]}: "))
 
 
-if 100 > aluno["Média"] > 70:
+if 10.0 > aluno["Média"] > 7.0:
     aluno["Situação"] = "Aprovado"
-elif 49 < aluno["Média"] < 70:
+elif 4.9 < aluno["Média"] < 7.0:
     aluno["Situação"] = "Recuperação"
-elif 0 <= aluno["Média"] <= 49:
+elif 0 <= aluno["Média"] <= 4.9:
     aluno["Situação"] = "Reprovado"
 else:
     print("Média inválida.")
