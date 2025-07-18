@@ -7,7 +7,24 @@ calcule a acrescente, além da idade, com quantos anos a pessoa vai se aposentar
 """
 
 
-nome = input("Digite o nome: ")
+from datetime import date
+
+
+ano = date.today().year
+
+pessoa = {}
+
+pessoa["nome"] = input("Digite o nome: ")
 nascimento = int(input("Digite o ano nascimento: "))
-contratacao = int(input("Digite ano da contrataçao: "))
-salario = float(input("Digite seu salario: "))
+pessoa["idade"] = ano - nascimento
+pessoa["ctps"] = int(input("Carteira de trabalho [0 não tem]: "))
+
+if pessoa["ctps"] != 0:
+    pessoa["contratacao"] = int(input("Ano de contratação: "))
+    pessoa["salario"] = float(input("Salário: "))
+    pessoa["aposentadoria"] = pessoa["contratacao"] - nascimento + 35
+
+print(pessoa)
+
+for k,v in pessoa.items():
+    print(f"{k} tem o valor {v}")
