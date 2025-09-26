@@ -13,10 +13,10 @@ def ficha(name='<desconhecido>', gols=0):
 nome = input("Nome do Jogador: ")
 gol = input("Número de Gols: ")
 if gol.isnumeric():
-    gol = int(gol)
+    gols = int(gol)
 else:
-    gol = 0
+    gols = 0
 if nome.strip() == '':
     ficha(gols=gol)
 else:
-    ficha(nome, gol)
+    ficha(nome, gols)
