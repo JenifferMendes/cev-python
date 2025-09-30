@@ -58,6 +58,19 @@ Vantagens da modularização.
 - Ocultação de código detalhado
 - Reutilização em outros projetos
 
+Parte 02
 Pacotes
--> parei em 20:18
+
+Quando os modulos começam a crescer, devemos separar as funções que são semelha
+ntes em outros arquivos.
+
+utilizara os mesmos comandos para chamar esse pacotes.
+
+todo arquivo.py pode ser potencialmente um modulo.
+No python, toda pasta é considerada um pacote
+
+dentro de cada pasta, voce deve utilizar um arquivo
+__init__.py
+dentro desse arquvio voce joga as funções
+
 """
