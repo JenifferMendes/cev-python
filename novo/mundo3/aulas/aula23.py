@@ -58,4 +58,64 @@ finally:
 -> certo/falha
 
 time da aula: 22:28
+
+11/10
+Tratar exceções
+
+
+try:
+operação que você quer tentar, comandos que dariam 
+except:
+se falhou o try , é o que deve acontecer aqui.
+else:
+se deu certo o try, então vai rodar essa parte
+finally:
+certo/falha
+se deu certo ou errado, irá acontecer
+
+try:
+    a = int(input("Numerador: "))
+    b = int(input("Demoniador: "))
+    r = a / b
+except Exception as erro:
+    print("Infelizmente tivemos um problema... :( ")
+else:
+    print(f"O resultado é {r:.1f}")
+finally:
+    print("Volte sempre! Muito Obrigada!")
+
+no except voce pode escrever Exception as erro
+
+try:
+    a = int(input("Numerador: "))
+    b = int(input("Demoniador: "))
+    r = a / b
+except Exception as erro:
+    print("Problema encontrado foi {erro.___class__}:( ")
+else:
+    print(f"O resultado é {r:.1f}")
+finally:
+    print("Volte sempre! Muito Obrigada!")
+
+pode ter except para cada um dos tipos de erros
+
+try:
+    a = int(input("Numerador: "))
+    b = int(input("Demoniador: "))
+    r = a / b
+except (ValueError, TypeError):
+    print("Tivemos um problema com os tipos de dados que você digitou. ")
+except ZeroDivisionError:
+    print("Não é possível dividir um número por zero")
+except KeyboardInterrupt:
+    print("O usuário preferiu não informar os dados!")
+except Exception as erro:
+    print(f"O erro encontrado foi {erro.__cause__}")
+else:
+    print(f"O resultado é {r:.1f}")
+finally:
+    print("Volte sempre! Muito Obrigada!")
+
+
+
 """
