@@ -7,9 +7,9 @@ pessoas cadastradas.
 """
 
 
-import lib.interface
+import biblioteca.interface
 
 
 
-lib.interface.titulo("SISTEMA ARQUIVO V1.0")
-lib.interface.menu(["opcao ", "opcao" , "opcao"])
+biblioteca.interface.titulo("SISTEMA ARQUIVO V1.0")
+biblioteca.interface.menu(["opcao ", "opcao" , "opcao"])
