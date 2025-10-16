@@ -7,9 +7,23 @@ pessoas cadastradas.
 """
 
 
-import biblioteca.interface
+from biblioteca.interface import *
+from time import sleep
 
 
-
-biblioteca.interface.titulo("SISTEMA ARQUIVO V1.0")
-biblioteca.interface.menu(["opcao ", "opcao" , "opcao"])
+while True:
+    resposta = menu([
+        "Ver pessoas cadastradas",
+        "Cadastrar nova Pessoa" ,
+        "Sair do Sistema",
+        ])
+    if resposta == 1:
+        titulo("Opção 1")
+    elif resposta == 2:
+        titulo("Opção 2")
+    elif resposta == 3:
+        titulo("Saindo do sistema...Até logo!")
+        break
+    else:
+        print("ERRO! Digite uma opção válida! ")
+    sleep(1)
