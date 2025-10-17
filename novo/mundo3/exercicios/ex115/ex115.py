@@ -8,8 +8,14 @@ pessoas cadastradas.
 
 
 from biblioteca.interface import *
+from biblioteca.arquivo import *
 from time import sleep
 
+
+nome_arquivo = "exercicios/ex115/bancodedados.txt"
+
+if not arquivoExiste(nome_arquivo):
+    criarArquivo(nome_arquivo)
 
 while True:
     resposta = menu([
