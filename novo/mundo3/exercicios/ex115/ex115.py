@@ -24,12 +24,15 @@ while True:
         "Sair do Sistema",
         ])
     if resposta == 1:
+        # opcao de listar o conteúdo de um arquivo
+        lerArquivo(nome_arquivo)
         titulo("Opção 1")
     elif resposta == 2:
         titulo("Opção 2")
+        sleep(5)
     elif resposta == 3:
         titulo("Saindo do sistema...Até logo!")
         break
     else:
         print("ERRO! Digite uma opção válida! ")
-    sleep(1)
+    sleep(2)
