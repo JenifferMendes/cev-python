@@ -26,10 +26,12 @@ while True:
     if resposta == 1:
         # opcao de listar o conteúdo de um arquivo
         lerArquivo(nome_arquivo)
-        titulo("Opção 1")
-    elif resposta == 2:
-        titulo("Opção 2")
         sleep(5)
+    elif resposta == 2:
+        titulo("NOVO CADASTRO")
+        nome = str(input("Nome: "))
+        idade = leiaInt("Idade: ")
+        cadastrarPessoa(nome_arquivo, nome, idade)
     elif resposta == 3:
         titulo("Saindo do sistema...Até logo!")
         break
