@@ -28,7 +28,6 @@ while True:
         lerArquivo(nome_arquivo)
         sleep(5)
     elif resposta == 2:
-        titulo("NOVO CADASTRO")
         nome = str(input("Nome: "))
         idade = leiaInt("Idade: ")
         cadastrarPessoa(nome_arquivo, nome, idade)
